@@ -39,7 +39,7 @@ export function Sidebar() {
         </div>
         <div className="min-w-0">
           <p className="truncate text-sm font-semibold tracking-tight">
-            MeiGold
+            Gold
           </p>
           <p className="text-[11px] text-muted-foreground">UAE operations</p>
         </div>
@@ -90,7 +90,7 @@ export function Sidebar() {
           <div className="min-w-0">
             <p className="truncate text-sm font-medium">S. Al Marri</p>
             <p className="truncate text-[11px] text-muted-foreground">
-              s.almarri@meigold.ae
+              s.almarri@gold.ae
             </p>
           </div>
         </div>

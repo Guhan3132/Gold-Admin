@@ -1,10 +1,10 @@
-# MeiGold Admin Dashboard
+# Gold Admin Dashboard
 
-Operations control panel for **MeiGold** — a UAE fractional gold & silver investment platform (DMCC, Dubai). This dashboard gives internal teams a single view of users, custody, approvals, KYC queues, live market rates, and fulfillment activity.
+Operations control panel for **Gold** — a UAE fractional gold & silver investment platform (DMCC, Dubai). This dashboard gives internal teams a single view of users, custody, approvals, KYC queues, live market rates, and fulfillment activity.
 
-Built as a **light-theme** admin UI using MeiGold brand tokens (navy + gold, DM Sans).
+Built as a **light-theme** admin UI using Gold brand tokens (navy + gold, DM Sans).
 
-**Repository:** [github.com/Guhan3132/MeiGold-Admin](https://github.com/Guhan3132/MeiGold-Admin)
+**Repository:** [github.com/Guhan3132/Gold-Admin](https://github.com/Guhan3132/Gold-Admin)
 
 ---
 
@@ -47,8 +47,8 @@ PostgreSQL is optional for local UI development — the app runs with mock API r
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Guhan3132/MeiGold-Admin.git
-cd MeiGold-Admin
+git clone https://github.com/Guhan3132/Gold-Admin.git
+cd Gold-Admin
 ```
 
 ### 2. Install dependencies
@@ -146,7 +146,7 @@ prisma/
 
 ## Design system
 
-The UI follows **MeiGold brand guidelines** (light theme):
+The UI follows **Gold brand guidelines** (light theme):
 
 - **Canvas:** warm off-white (`#FBF8EF`)
 - **Ink:** deep navy text (`#02091A`)
@@ -186,7 +186,7 @@ Kill the process on that port or let Next.js pick another (e.g. 3001).
 
 ## License
 
-Private — MeiGold FZ-LLC. All rights reserved.
+Private — Gold FZ-LLC. All rights reserved.
 
 ---
 

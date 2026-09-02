@@ -16,7 +16,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MeiGold Admin Dashboard",
+  title: "Gold Admin Dashboard",
   description: "Operations control panel for own-inventory gold and silver custody.",
 };
 

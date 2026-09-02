@@ -46,7 +46,7 @@ export const usersMock: UserRecord[] = [
   {
     id: "USR-1024",
     name: "Omar Hassan",
-    email: "omar.h@meigold.ae",
+    email: "omar.h@gold.ae",
     tier: "premium",
     status: "active",
     aum: "AED 412,800",
