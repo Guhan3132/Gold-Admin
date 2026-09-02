@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* MeiGold light theme — canvas / surface / ink */
+    --background: 42 47% 96%;
+    --foreground: 220 87% 5%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 87% 5%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 87% 5%;
+
+    /* Primary CTA — gold fill, navy text */
+    --primary: 36 41% 51%;
+    --primary-foreground: 220 87% 5%;
+
+    --secondary: 42 35% 91%;
+    --secondary-foreground: 220 87% 5%;
+    --muted: 42 35% 91%;
+    --muted-foreground: 48 5% 34%;
+    --accent: 38 44% 94%;
+    --accent-foreground: 220 87% 5%;
+
+    --destructive: 8 65% 48%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 24% 86%;
+    --input: 40 24% 86%;
+    --ring: 36 41% 51%;
+    --radius: 0.75rem;
+
+    --chart-1: 36 41% 51%;
+    --chart-2: 220 87% 5%;
+    --chart-3: 152 55% 39%;
+    --chart-4: 36 72% 41%;
+    --chart-5: 215 28% 45%;
+
+    --sidebar: 0 0% 100%;
+    --sidebar-foreground: 220 87% 5%;
+    --sidebar-primary: 36 41% 51%;
+    --sidebar-primary-foreground: 220 87% 5%;
+    --sidebar-accent: 38 44% 94%;
+    --sidebar-accent-foreground: 220 87% 5%;
+    --sidebar-border: 40 24% 86%;
+    --sidebar-ring: 36 41% 51%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  html,
+  body {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: hsl(var(--border));
+    border-radius: 3px;
+  }
+
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .animate-marquee {
+    animation: marquee 40s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
